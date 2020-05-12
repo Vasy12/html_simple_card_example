@@ -1,0 +1,49 @@
+
+body {
+    text-align: center;
+    background: #333;
+}
+
+.card {
+    display: inline-block;
+    background: white;
+    max-width: 320px;
+    width: 100%;
+    min-width: 300px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17.6px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.imageContainer > img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.cardContent {
+    padding: 1.5em;
+}
+
+.cardContent > h3 {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.17em;
+}
+
+.cardContent > h3, .cardContent > p {
+    padding: 1em 0;
+    line-height: 1.5em;
+}
+
+.card + .card {
+    margin-left: 60px;
+}
